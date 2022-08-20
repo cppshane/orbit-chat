@@ -1,0 +1,122 @@
+.outer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right top, #000000, #0b0005, #11010e, #120316, #10071e, #0e0822, #0a0927, #030b2b, #07092c, #0c062c, #11032c, #15002c);
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 25em;
+  margin-top: 3em;
+}
+
+.uri-container {
+  display: flex;
+  flex-direction: row;
+  height: 3em;
+}
+
+#uri-textbox {
+  border-radius: 5px 0 0 5px;
+  font-family: 'JetBrains Mono', monospace;
+  border: none;
+  padding: 0 1em;
+  margin: 0;
+  flex-grow: 1;
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
+#uri-button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0 2em;
+  background: #555555;
+  color: #FFFFFF;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+#uri-button:hover {
+  background: #1bb159;
+}
+
+.message-client-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.message-container {
+  flex-grow: 1;
+  height: 20em;
+  background: #222222;
+  border-radius: 5px 5px 0 0;
+  overflow-y: scroll;
+  padding: 1em 0;
+}
+
+.message-container-inner {
+  margin: 0 1em;
+}
+
+.message-container p {
+  max-width: 100%;
+  word-wrap: normal;
+  padding: 0 1em;
+}
+
+#message-input-textbox {
+  height: 3em;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  padding: 0 1em;
+  margin: 0;
+  background-color: #555555;
+  color: #FFFFFF;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#status-indicator {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 540px) {
+  .center-container {
+    width: 100%;
+  }
+  .content-container {
+    width: 100%;
+  }
+  #uri-textbox {
+    border-radius: 0;
+  }
+  #uri-button {
+    border-radius: 0;
+    font-size: 0.6rem;
+  }
+  #message-input-textbox {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="outer-container">
+  <div class="center-container">
+    <div class="title-container">
+      <h1>Orbit Chat</h1>
+      <h2>the future of the internet</h2>
+      <a class="github-button" href="https://github.com/cppshane/orbit-chat" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+    </div>
+    <div class="content-container">
+      <div class="uri-container">
+        <input id="uri-textbox" type="text" [(ngModel)]="uri">
+        <button id="uri-button" (click)="connectButtonClick()">Connect</button>
+      </div>
+      <div class="message-client-container">
+        <div #messageContainer class="message-container">
+          <p *ngFor="let message of orbitDbService.messages">{{message}}</p>
+        </div>
+        <input id="message-input-textbox" type="text" (keydown.enter)="messageInputEnterKeydown($event)">
+      </div>
+    </div>
+    <p id="status-indicator">{{status}}</p>
+  </div>
+</div>
