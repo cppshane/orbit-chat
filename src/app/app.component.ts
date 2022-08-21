@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { IpfsService } from './services/ipfs/ipfs.service';
 import { OrbitdbService } from './services/orbit-db/orbitdb.service';
 
