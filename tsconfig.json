@@ -26,6 +26,10 @@
     "useDefineForClassFields": false,
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
+  "include": [
+    "src/**/*",
+    "src/types/**/*"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
