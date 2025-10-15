@@ -71,10 +71,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "orbit-chat:build:production"
+              "buildTarget": "orbit-chat:build:production"
             },
             "development": {
-              "browserTarget": "orbit-chat:build:development"
+              "buildTarget": "orbit-chat:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "orbit-chat:build"
+            "buildTarget": "orbit-chat:build"
           }
         },
         "test": {
